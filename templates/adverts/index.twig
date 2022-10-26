@@ -1,0 +1,11 @@
+{% extends "base.twig" %}
+
+{% block body %}
+    <h1>Список объявлений</h1>
+
+    <ul>
+        {% for advert in adverts %}
+            <li>{{ advert.getTitle() }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
